@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>8025425806348426cc8dee9a49033855</cid>
+  dbatytegbook
+  <tableName>t_eg_book</tableName>
+  <showName>图书</showName>
+  <desc />
+  <submitName>egBook</submitName>
+  <fields>
+    <field id="a07e1d5e357ec84f091d31cdb58366ae" fieldName="c_id" fieldType="text" dbmsType="varchar" pk="true" defaultValue="" unique="true">
+      <extend label="uuid" submitName="id" comment="Varchar" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="93e54a2f7fb90fe8956ec6b85c1c438d" fieldName="c_name" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="图书名称" submitName="name" comment="varchar" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="d63f06d2ff8ffbd746efff5b862c718e" fieldName="c_auth" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="作者" submitName="auth" comment="varchar" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="533f050028ca16902792783d3eb15c44" fieldName="d_publisher" fieldType="date" dbmsType="datetime" pk="false" defaultValue="" unique="false">
+      <extend label="出版日期" submitName="publisher" comment="datetime" required="false" showTime="true" customFormat="YYYY-MM-DD" />
+    </field>
+    <field id="df9aa0d3f6606a03103a3be87e428672" fieldName="f_price" fieldType="number" dbmsType="decimal" pk="false" defaultValue="" unique="false">
+      <extend label="单价" submitName="price" comment="decimal" required="false" maxLength="6" valueUnit="无" maxPrecision="2" />
+    </field>
+    <field id="ab2de4e3cba6056ba762796a50c82e32" fieldName="d_buy" fieldType="date" dbmsType="datetime" pk="false" defaultValue="" unique="false">
+      <extend label="购买日期" submitName="buy" comment="datetime" required="false" showTime="true" customFormat="YYYY-MM-DD" />
+    </field>
+    <field id="4b88399c177220c1fa39e0a1e34bf488" fieldName="c_libraryid" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="图书室id" submitName="libraryid" comment="varchar" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="393b7a71f3cbca0272fc6c46808bd5d0" fieldName="c_isbn" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="ISBN" submitName="isbn" comment="varchar" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="390d947ba320ddd9309b8e9a26995c76" fieldName="c_version" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="第几版" submitName="version" comment="varchar" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="dca6f37ddf2aaf2b242d31289ee932cd" fieldName="i_photo" fieldType="image" dbmsType="longblob" pk="false" defaultValue="" unique="false">
+      <extend label="图书封面" submitName="photo" comment="LONGBLOB" required="false" />
+    </field>
+    <field id="57cb99cbaac6d309c64b6a72d668c742" fieldName="t_abst" fieldType="text" dbmsType="text" pk="false" defaultValue="" unique="false">
+      <extend label="摘要" submitName="abst" comment="LONGTEXT" required="false" editor="textarea" />
+    </field>
+    <field id="b3183c2406d5c080ba940122a20de185" fieldName="n_valid" fieldType="normalcode" dbmsType="int" pk="false" defaultValue="1" unique="false">
+      <extend label="是否有效" submitName="valid" comment="Integer" required="false" codeType="-1" editor="sSelect" />
+    </field>
+    <field id="3b3aa17bc704e85240360fd298aaa8e1" fieldName="t_invalidreason" fieldType="text" dbmsType="text" pk="false" defaultValue="" unique="false">
+      <extend label="删除此图书的原因" submitName="invalidreason" comment="text" required="false" editor="textarea" />
+    </field>
+    <field id="1880676f22ba875331ffb82c94da962f" fieldName="n_type" fieldType="normalcode" dbmsType="int" pk="false" defaultValue="" unique="false">
+      <extend label="类别" submitName="type" comment="Integer" required="false" codeType="-600" editor="sSelect" />
+    </field>
+    <field id="4a2d43346f739c62f9ca20435fee01b6" fieldName="i_attach" fieldType="image" dbmsType="longblob" pk="false" defaultValue="" unique="false">
+      <extend label="附件" submitName="attach" comment="LONGBLOB" required="false" />
+    </field>
+    <field id="80ba7a07d6c3aec7439d125b2664b980" fieldName="d_booking" fieldType="date" dbmsType="datetime" pk="false" defaultValue="" unique="false">
+      <extend label="预订时间" submitName="booking" comment="datetime" required="false" showTime="true" customFormat="YYYY-MM-DD" />
+    </field>
+    <field id="b0a1c28528cd0d6d0cb99714a2d8e83f" fieldName="n_bookinguserid" fieldType="number" dbmsType="decimal" pk="false" defaultValue="" unique="false">
+      <extend label="预订人" submitName="bookinguserid" comment="Numeric" required="false" maxLength="17" valueUnit="无" maxPrecision="2" />
+    </field>
+    <field id="58de9e2fbfa5f8d0a69daf6eecddb63f" fieldName="n_lenduserid" fieldType="number" dbmsType="decimal" pk="false" defaultValue="" unique="false">
+      <extend label="借出用户" submitName="lenduserid" comment="Numeric" required="false" maxLength="17" valueUnit="无" maxPrecision="2" />
+    </field>
+    <field id="76a20b014b5a20ac249428195433ef1f" fieldName="d_lend" fieldType="date" dbmsType="datetime" pk="false" defaultValue="" unique="false">
+      <extend label="借出人" submitName="lend" comment="datetime" required="false" showTime="true" customFormat="YYYY-MM-DD" />
+    </field>
+  </fields>
+</table>
+

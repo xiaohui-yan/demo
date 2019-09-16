@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>d094abd52ec853f3a13e4101a63d7464</cid>
+  dbatytatyuserright
+  <tableName>t_aty_user_right</tableName>
+  <showName>帐号-权限关系</showName>
+  <desc />
+  <submitName>atyUserRight</submitName>
+  <fields>
+    <field id="024986cfd4705194355522142ba9de6c" fieldName="c_id" fieldType="text" dbmsType="varchar" pk="true" defaultValue="" unique="true">
+      <extend label="ID" submitName="id" comment="VarChar" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="f835a3f78811aa7d8cdfd03d46eb2f40" fieldName="c_userid" fieldType="organ" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="帐号ID" submitName="userid" comment="VarChar" required="true" maxLength="300" editor="sTree" organType="user" />
+    </field>
+    <field id="98dc62d4783f810d303ed666c6adc345" fieldName="n_type" fieldType="number" dbmsType="int" pk="false" defaultValue="1" unique="false">
+      <extend label="类型" submitName="type" comment="Integer" required="true" valueUnit="无" maxPrecision="0" />
+    </field>
+    <field id="3935c6f6312484fbbb24a4f4a70053d4" fieldName="c_roleid" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="角色ID" submitName="roleid" comment="VarChar" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="78853b5af7161702a5079c8fad879e91" fieldName="c_rightkey" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="权限字" submitName="rightkey" comment="VarChar" required="false" maxLength="300" editor="input" />
+    </field>
+  </fields>
+</table>
+
